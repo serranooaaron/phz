@@ -8,33 +8,33 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 
 -- -----------------------------------------------------
--- Schema Impresoras
+-- Schema GestBD
 -- -----------------------------------------------------
-DROP SCHEMA IF EXISTS `Impresoras` ;
+DROP SCHEMA IF EXISTS `GestBD` ;
 
 -- -----------------------------------------------------
--- Schema Impresoras
+-- Schema GestBD
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `Impresoras` DEFAULT CHARACTER SET utf8 ;
-USE `Impresoras` ;
+CREATE SCHEMA IF NOT EXISTS `GestBD` DEFAULT CHARACTER SET utf8 ;
+USE `GestBD` ;
 
 -- -----------------------------------------------------
--- Table `Impresoras`.`rollos`
+-- Table `GestBD`.`rollos`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `Impresoras`.`rollos` ;
+DROP TABLE IF EXISTS `GestBD`.`rollos` ;
 
-CREATE TABLE IF NOT EXISTS `Impresoras`.`rollos` (
+CREATE TABLE IF NOT EXISTS `GestBD`.`rollos` (
   `idRollos` INT NOT NULL,
   PRIMARY KEY (`idRollos`))
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `Impresoras`.`impresoras`
+-- Table `GestBD`.`impresoras`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `Impresoras`.`impresoras` ;
+DROP TABLE IF EXISTS `GestBD`.`impresoras` ;
 
-CREATE TABLE IF NOT EXISTS `Impresoras`.`impresoras` (
+CREATE TABLE IF NOT EXISTS `GestBD`.`impresoras` (
   `idimpresora` INT NOT NULL,
   `nombre_impresora` VARCHAR(45) NULL,
   `marca` VARCHAR(45) NULL,
@@ -50,11 +50,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `Impresoras`.`materiales`
+-- Table `GestBD`.`materiales`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `Impresoras`.`materiales` ;
+DROP TABLE IF EXISTS `GestBD`.`materiales` ;
 
-CREATE TABLE IF NOT EXISTS `Impresoras`.`materiales` (
+CREATE TABLE IF NOT EXISTS `GestBD`.`materiales` (
   `idmateriales` INT NOT NULL,
   `descripcion` VARCHAR(45) NULL,
   PRIMARY KEY (`idmateriales`))
@@ -62,21 +62,21 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `Impresoras`.`impresiones`
+-- Table `GestBD`.`impresiones`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `Impresoras`.`impresiones` ;
+DROP TABLE IF EXISTS `GestBD`.`impresiones` ;
 
-CREATE TABLE IF NOT EXISTS `Impresoras`.`impresiones` (
+CREATE TABLE IF NOT EXISTS `GestBD`.`impresiones` (
 )
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `Impresoras`.`colores`
+-- Table `GestBD`.`colores`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `Impresoras`.`colores` ;
+DROP TABLE IF EXISTS `GestBD`.`colores` ;
 
-CREATE TABLE IF NOT EXISTS `Impresoras`.`colores` (
+CREATE TABLE IF NOT EXISTS `GestBD`.`colores` (
   `idcolores` INT NOT NULL,
   `descripcion` VARCHAR(45) NULL,
   PRIMARY KEY (`idcolores`))
@@ -84,11 +84,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `Impresoras`.`piezas`
+-- Table `GestBD`.`piezas`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `Impresoras`.`piezas` ;
+DROP TABLE IF EXISTS `GestBD`.`piezas` ;
 
-CREATE TABLE IF NOT EXISTS `Impresoras`.`piezas` (
+CREATE TABLE IF NOT EXISTS `GestBD`.`piezas` (
 )
 ENGINE = InnoDB;
 
